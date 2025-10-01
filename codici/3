@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Ipotenusa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci la lunghezza del primo cateto: ");
+        double cateto1 = scanner.nextDouble();
+        System.out.print("Inserisci la lunghezza del secondo cateto: ");
+        double cateto2 = scanner.nextDouble();
+        double ipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
+        System.out.println("L'ipotenusa è: " + ipotenusa);
+        scanner.close();
+    }
+}
