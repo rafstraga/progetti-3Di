@@ -1,1 +1,21 @@
+import java.util.Scanner;
+
+public class Calcolatrice {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci il primo numero: ");
+        double num1 = scanner.nextDouble();
+        System.out.print("Inserisci il secondo numero: ");
+        double num2 = scanner.nextDouble();
+        System.out.print("Scegli operazione (+, -, *, /): ");
+        char op = scanner.next().charAt(0);
+        double risultato = 0;
+        if (op == '+') risultato = num1 + num2;
+        else if (op == '-') risultato = num1 - num2;
+        else if (op == '*') risultato = num1 * num2;
+        else if (op == '/') risultato = num1 / num2;
+        System.out.println("Risultato: " + risultato);
+        scanner.close();
+    }
+}
 
