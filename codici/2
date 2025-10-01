@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Quadrato {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci la lunghezza del lato: ");
+        double lato = scanner.nextDouble();
+        double area = lato * lato;
+        double perimetro = 4 * lato;
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);
+        scanner.close();
+    }
+}
