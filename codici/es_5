@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Rettangolo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci la base del rettangolo: ");
+        double base = scanner.nextDouble();
+        System.out.print("Inserisci l'altezza del rettangolo: ");
+        double altezza = scanner.nextDouble();
+        double area = base * altezza;
+        double perimetro = 2 * (base + altezza);
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);
+        scanner.close();
+    }
+}

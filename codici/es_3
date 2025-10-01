@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class VolumeCono {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci il raggio di base del cono: ");
+        double raggio = scanner.nextDouble();
+        System.out.print("Inserisci l'altezza del cono: ");
+        double altezza = scanner.nextDouble();
+        double volume = (Math.PI * raggio * raggio * altezza) / 3;
+        System.out.println("Il volume del cono è: " + volume);
+        scanner.close();
+    }
+}

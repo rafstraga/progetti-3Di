@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PesoCilindro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci il raggio di base del cilindro (cm): ");
+        double raggio = scanner.nextDouble();
+        System.out.print("Inserisci l'altezza del cilindro (cm): ");
+        double altezza = scanner.nextDouble();
+        double pesoSpecifico = 3.40; // g/cm^3
+        double volume = Math.PI * raggio * raggio * altezza;
+        double peso = volume * pesoSpecifico;
+        System.out.println("Il peso del cilindro è: " + peso + " grammi");
+        scanner.close();
+    }
+}

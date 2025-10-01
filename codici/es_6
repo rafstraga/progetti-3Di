@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Cilindro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci il raggio di base del cilindro: ");
+        double raggio = scanner.nextDouble();
+        System.out.print("Inserisci l'altezza del cilindro: ");
+        double altezza = scanner.nextDouble();
+        double superficie = 2 * Math.PI * raggio * (raggio + altezza);
+        System.out.println("La superficie totale del cilindro è: " + superficie);
+        scanner.close();
+    }
+}
