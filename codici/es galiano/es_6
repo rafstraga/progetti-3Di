@@ -1,0 +1,20 @@
+// Dichiaro la classe principale
+public class SommaNumeri {
+    // Metodo principale che viene eseguito all'avvio del programma
+    public static void main(String[] args) {
+        // Importo la classe Scanner per leggere l'input da tastiera
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        // Chiedo all'utente di inserire il primo numero intero
+        System.out.print("Inserisci il primo numero intero: ");
+        int primoNumero = scanner.nextInt();
+        // Chiedo all'utente di inserire il secondo numero intero
+        System.out.print("Inserisci il secondo numero intero: ");
+        int secondoNumero = scanner.nextInt();
+        // Calcolo la somma dei due numeri e la memorizzo in una variabile
+        int somma = primoNumero + secondoNumero;
+        // Stampo a video il risultato della somma
+        System.out.println("La somma è: " + somma);
+        // Chiudo lo scanner
+        scanner.close();
+    }
+}
