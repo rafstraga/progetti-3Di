@@ -1,0 +1,15 @@
+// Dichiaro la classe principale
+public class es_6 {
+    // Metodo principale che viene eseguito all'avvio del programma
+    public static void main(String[] args) {
+        // Dichiaro e inizializzo il primo numero intero
+        int numero1 = 5;
+        // Dichiaro e inizializzo il secondo numero intero
+        int numero2 = 7;
+        int numero2 = 7;
+        // Calcolo la somma dei due numeri e la memorizzo in una variabile
+        int somma = numero1 + numero2;
+        // Stampo a video il risultato della somma
+        System.out.println("La somma è: " + somma);
+    }
+}
