@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalcoloSomma {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Lettura dei due numeri
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+
+        // Calcolo dei valori assoluti
+        int absA = Math.abs(A);
+        int absB = Math.abs(B);
+
+        // Trova il minore tra i due
+        int minore = Math.min(absA, absB);
+
+        // Calcola il doppio del minore
+        int doppioMinore = 2 * minore;
+
+        // Somma il doppio del minore all'altro numero
+        int risultato = doppioMinore + (absA == minore ? absB : absA);
+
+        // Stampa del risultato
+        System.out.println(risultato);
+    }
+}
